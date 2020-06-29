@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="en-US" >
 
-  <head>  <!-- The <head> element is a container for all the head elements.
-             The <head> element can include a title for the document, scripts, styles, meta information, and more. -->
+  <head>  
       <meta charset="UTF-8">
-      <title>Kevin Patel</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <title>Home Page</title>
 
       <meta name="author" content="Kevin Patel">
       <meta name="description" content="Kevin's Demo Portfolio Site aims to showcase Kevin's software engineering portfolio
          including contact information, projects, and brief information about Kevin. ">
 
       <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
   </head>
 
   <body>
 
     <header>
-      <nav>
-          <ul id='navbar'>
-              <li><a href="#welcome-section">Home</a></li>
-              <li><a href="html/about.html">About</a></li>
-              <li><a href="html/projects.html">Projects</a></li>
-              <li><a href="html/contact.html">Contact</a></li>
-          </ul>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark" role="navigation">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active" href="#welcome-section">Home</a>
+            <a class="nav-item nav-link" href="html/projects.html">Projects</a>
+            <a class="nav-item nav-link" href="html/contact.html">Contact</a>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -34,6 +40,16 @@
           <p>A Technology Enthusiast</p>
       </div>
     </main>
+
+    <footer>
+      <a id='profile-link' href="https://github.com/kevinjaypatel" target="_blank" class="contact-details">GitHub</a>
+      <a href="https://www.linkedin.com/in/kevinjaypatel/" target="_blank" class="contact-details">LinkedIn</a>
+      <a href="mailto:kevinjaypatel@gmail.com" class="contact-details">Email</a>
+    </footer>
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   </body>
 </html>
