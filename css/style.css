@@ -188,3 +188,9 @@ such as width and height of the viewport or device, resolution, etc*/
     line-height: normal;
   }
 }  */
+
+.icon-spacing {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
