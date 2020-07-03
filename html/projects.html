@@ -1,47 +1,76 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>  <!-- The <head> element is a container for all the head elements.
-           The <head> element can include a title for the document, scripts, styles, meta information, and more. -->
+<head>  
     <meta charset="UTF-8">
-    <title>Kevin Patel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Work Experience</title>
 
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
+    <link rel="stylesheet" href="../bootstrap-4.4.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../favicon.ico">
+
 </head>
 
   <body>
 
   <header>
-    <nav>
-        <ul id='navbar'>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#projects-section">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" role="navigation">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="../index.html">Home</a>
+            <a class="nav-item nav-link active" href="#projects-section">Projects</a>
+          </div>
+        </div>
+      </nav>
   </header>
 
   <main>
-    <div id="projects-section" class="work-header">
-        <h1>Past projects</h1>
+    <div id="projects-section" class="container">
+      <div class="row align-items-start">
+        <div class="col align-self-center">
+          <div class="work-header">
 
-        <a href="" class="project project-tile">
-            <img class="project-pic" src="https://img.icons8.com/plasticine/80/000000/android-os.png" alt="project">
-            <div class="project-title">Android Calculator App</div>
-        </a>
-        <a href="" class="project project-tile">
-            <img class="project-pic" src="../images/pssr-logo.png" alt="project">
-            <div class="project-title">Pre-Startup Safety Review</div>
-        </a>
-        <a href="" class="project project-tile">
-            <img class="project-pic" src="https://img.icons8.com/ios/50/000000/sql.png" alt="project">
-            <div class="project-title">Database Class Project</div>
-        </a>
+            <h1 class="border-bottom border-dark">Past Projects</h1>
 
+            <!-- Trigger modal -->
+            <a href="" class="project-pic" data-toggle="modal" data-target="#android-proj-modal">
+                <img class="pt-3" src="https://img.icons8.com/plasticine/80/000000/android-os.png" alt="android project">
+                <div class="project-title">Android Calculator App</div>
+            </a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="android-proj-modal" tabindex="-1" role="dialog" aria-labelledby="android-proj-modal" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="android-proj-modal">Project Description</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body" style="text-align: left;">
+                    <p>Simple Android calculator program I wrote using Android Studio to help me leverage my knowledge of Java</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>  
+        </div>
+      </div>  
     </div>
   </main>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
 
   </body>
 

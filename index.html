@@ -1,39 +1,77 @@
 <!DOCTYPE html>
 <html lang="en-US" >
 
-  <head>  <!-- The <head> element is a container for all the head elements.
-             The <head> element can include a title for the document, scripts, styles, meta information, and more. -->
+  <head>  
       <meta charset="UTF-8">
-      <title>Kevin Patel</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <title>Home</title>
 
       <meta name="author" content="Kevin Patel">
       <meta name="description" content="Kevin's Demo Portfolio Site aims to showcase Kevin's software engineering portfolio
          including contact information, projects, and brief information about Kevin. ">
 
       <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
+      <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
       <link rel="stylesheet" href="css/style.css">
-      <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
 
     <header>
-      <nav>
-          <ul id='navbar'>
-              <li><a href="#welcome-section">Home</a></li>
-              <li><a href="html/about.html">About</a></li>
-              <li><a href="html/projects.html">Projects</a></li>
-              <li><a href="html/contact.html">Contact</a></li>
-          </ul>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark" role="navigation">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active" href="#welcome-section">Home</a>
+            <a class="nav-item nav-link" href="html/projects.html">Projects</a>
+          </div>
+        </div>
       </nav>
     </header>
 
     <main>
-      <div id="welcome-section" class="intro">
-          <h1>Hello Welcome, I'm Kevin</h1>
-          <p>A Technology Enthusiast</p>
-      </div>
-    </main>
 
+      <div id="welcome-section" class="container">
+          <div class="row align-items-start">
+            <div class="col align-self-center">
+              <div class="intro">
+                <div class="py-5">
+                  <img src="images/head-shot.jpg" class=" img-fluid rounded-circle responsive-head-shot" alt="Responsive image" width="300" height="300">
+                  <div class="py-3">
+                      <a class="icon-spacing" href="https://github.com/kevinjaypatel" target="_blank">
+                        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                      </a>
+                      <a class="icon-spacing" href="https://www.linkedin.com/in/kevinjaypatel/" target="_blank">
+                        <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                      </a>
+                      <a class="icon-spacing" href="mailto:kevinjaypatel@gmail.com">
+                        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                      </a>
+                  </div>
+                </div>
+                <h1 class="border-bottom border-dark">About Me</h1>
+                <p style="text-align: left;">Hello, welcome to my page! My name is Kevin Patel, and I am a senior computer science student at Cal State Long Beach graduating in 
+                  Fall 2021. After graduation, I am hoping to land an opportunity doing what I love most: developing web application techologies. Currently, 
+                  I am learning front-end HTML, CSS, and JavaScript, which I used to design this site. Additionally, I am working on developing a web application
+                  using Microsoft .NET Core MVC framework.   
+
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+    </main>
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/dffba26452.js"></script>
+    
   </body>
 </html>
