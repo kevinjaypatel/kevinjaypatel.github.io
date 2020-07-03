@@ -18,8 +18,7 @@ body {
 } */
 
 .intro {
-  min-height: 55vh;/*min height sets the minimum height to 5vh*/
-                    /*vh means 55% of the viewport height*/
+  /* min-height: 55vh; */
 
   padding-top: 10vh;/*Adds a padding of 45% of viewport height to the top*/
 
@@ -77,15 +76,15 @@ body {
   margin: 40px 100px;
 }
 
-/* .project-pic {
-  width: 100%;
+.project-pic {
+  width: 80%;
   height: 180px;
   
-} */
+} 
 
-/* .project-title {
+ .project-title {
   font-weight: bold;
-} */
+}
 
 /* .show-all {
   text-decoration: none;
@@ -194,3 +193,40 @@ such as width and height of the viewport or device, resolution, etc*/
   padding-right: 10px;
 }
 
+.image-text-spacing {
+  padding-top: 0px;
+  margin-bottom: 10 px;  
+}
+
+
+.responsive-head-shot {
+  width: 85%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .responsive-head-shot {
+    max-width: 300px;
+  }
+}
+
+/* @media (min-width: 768px) {
+  .responsive-head-shot {
+    max-width: 720px;
+  }
+} */
+
+/* @media (min-width: 992px) {
+  .responsive-head-shot {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .responsive-head-shot {
+    max-width: 1140px;
+  }
+} */
